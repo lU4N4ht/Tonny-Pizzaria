@@ -84,6 +84,7 @@ footer{
     align-items: center;
     padding-bottom: 32px;
     color: #fff;
+    gap: 13px;
 }
 footer p{
     font-weight: 200;
