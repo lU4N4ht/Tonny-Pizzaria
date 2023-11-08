@@ -1,0 +1,36 @@
+.favorite-pizza {
+    background-image: url(../img/pizzzzza.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    display: grid;
+    align-items: end;
+}
+.price-container{
+    padding-left: 7px;
+}
+
+.price {
+    font-size: 12px;
+    background-color: var(--vermelho);
+    width: 57px;
+    height: 20px;
+    border-radius: 16px;
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    background-color: var(--cinza);
+    width: 112px;
+    height: 36px;
+    border-bottom-left-radius: 8px;
+    font-size: 12px;
+    color: var(--branco);
+    flex-wrap: wrap;
+    padding-left: 7px;
+}
