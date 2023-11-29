@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/categories.css">
     <link rel="stylesheet" href="../css/favourite.css">
+    <script src="../js/home.js" defer ></script>
     <title>Tony's Pizzaria</title>
 </head>
 
@@ -33,29 +34,9 @@
         </div>
     </header>
     <main>
-        <section>
-                <h2 class="text-style">Categorias</h2>
-                <div class="categories-container">
-                    <div class="categories">
-                        <img src="../img/pizza.svg" alt="option" class="categories-icon">
-                    </div>
-    
-                    <div class="categories">
-                        <img src="../img/beverages.png" alt="option" class="categories-icon">
-                    </div>
-                    <div class="categories">
-                        <img src="../img/watermelon.png" alt="option" class="categories-icon">
-                    </div>
-                    <div class="categories">
-                        <img src="../img/food.png" alt="option" class="categories-icon">
-                    </div>
-                    <div class="categories">
-                        <img src="../img/desert.png" alt="option" class="categories-icon">
-                    </div>
-                    <div class="categories">
-                        <img src="../img/ice-cream.png" alt="option" class="categories-icon">
-                    </div>
-                </div>
+        <section class="categorias">
+            <h2 class="text-style">Categorias</h2>
+            <div class="categories-container" id="categories-container"></div>
         </section>
         <section>
             <h2 class="text-style">Minhas pizzas favoritas</h2>
