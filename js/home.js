@@ -7,28 +7,25 @@ const categorias = [
     },
     {
         nome: 'bebida',
-        imagem : 'beverages.png'
+        imagem : 'bebida.png'
     },
     {
-        nome: 'fruta',
-        imagem : 'watermelon.png'
+        nome: 'calzone',
+        imagem : 'calzone.png'
     },
     {
-        nome: 'pizza2',
-        imagem : 'food.png'
+        nome: 'esfiha',
+        imagem : 'esfiha.png'
     },
     {
         nome: 'sorvete',
-        imagem : 'ice-cream.png'
+        imagem : 'sorvete.png'
     },
     {
         nome: 'sobremesa',
-        imagem : 'desert.png'
+        imagem : 'sobremesa.png'
     }
 ]
-
-
-
 function mostrarCategorias(categoria) {
     const container = document.getElementById('categories-container')
     const card = document.createElement('div')
@@ -42,3 +39,8 @@ function mostrarCategorias(categoria) {
     container.appendChild(card)
 }
 categorias.forEach(mostrarCategorias)
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+  });

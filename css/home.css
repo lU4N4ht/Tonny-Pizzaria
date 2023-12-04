@@ -79,6 +79,7 @@ header {
     border: none;
     outline: 0;
 }
+
 section {
     display: flex;
     flex-direction: column;
@@ -91,13 +92,44 @@ section {
     justify-content: center;
     align-items: center;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.favourites-section{
+.card {
     display: flex;
-    gap: 10px;
+    background-color: var(--branco);
+    width: 315px;
+    height: 69px;
+    border-radius: 8px;
+    padding-inline: 11px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.descricao-bebida p {
+    font-size: 12px;
+    font-weight: 400;
+    width: 127px;
+    color: var(--cinza);
+    flex-wrap: wrap;
+}
+
+.price-bebida {
+    font-size: 12px;
+    background-color: var(--vermelho);
+    width: 57px;
+    height: 20px;
+    border-radius: 16px;
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao-bebida {
+    display: flex;
+    justify-content: space-between;
 }
