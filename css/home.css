@@ -4,7 +4,6 @@ body {
     background-size: cover;
     padding: 27px 24px;
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
