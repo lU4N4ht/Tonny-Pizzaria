@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/512/599/599995.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/criar-conta.css">
+    <link rel="stylesheet" href="../css/botao.css">
+    <script src="../js/criar-conta.js"></script>
+    <title>Tony's Pizzaria</title>
+</head>
+
+<body>
+    <header>
+        <button class="prev-button">
+            <img src="../img/prev.png" alt="prev-button" class="prev">
+            <h2 class="criar-conta">Criar conta</h2>
+        </button>
+        <div class="container-usuario-imagem">
+            <div class="usuario-imagem">
+                <img class="conta-icon" src="../img/criarContaIcon.png" alt="usuario-icon" width="70">
+            </div>
+            <button class="adicionar">
+                <img class="adicionar-foto" src="../img/adicionar-foto.png" alt="botao-adicionar-foto">
+            </button>
+        </div>
+
+    </header>
+    <main>
+        <section class="informacoes-usuario">
+            <div class="informacoes">
+                <p>Nome do usuário</p>
+                <input type="text" placeholder="Insira seu nome aqui" name="name">
+            </div>
+            <div class="informacoes">
+                <p>Endereço de email</p>
+                <input type="text" placeholder="Insira seu email aqui" name="email">
+            </div>
+            <div class="informacoes">
+                <p>Senha</p>
+                <input type="password" placeholder="Insira sua senha aqui">
+            </div>
+            <div class="informacoes">
+                <p>Confirmação de senha</p>
+                <input type="password" placeholder="Confirme a sua senha">
+            </div>
+            <div class="informacoes">
+                <p>Telefone</p>
+                <input type="tel" placeholder="Insira seu telefone" name="name" required placeholder="(xx) xxxxx-xxxx">
+            </div>
+        </section>
+
+        <div class="botao-area">
+            <button class="botao">CRIAR CONTA</button>
+        </div>
+    </main>
+</body>
+
+</html>

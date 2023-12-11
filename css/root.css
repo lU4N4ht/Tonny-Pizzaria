@@ -1,6 +1,19 @@
 :root{
-    --cor-principal: #F27706;
-    --branco: #FFFFFF;
-    --vermelho: #F93030;
-    --cinza: #7F7F7F;
+    --dark-red: #972108;
+    --light-red: #EB5C3E;
+    --white: #FFFFFF;
+    --red: #B44933;
+    --orange: #C73027;
+    --light-orage: #F4E2D1;
+    --bg-color: #F5F1F1;
+    --card-bg: #F5F5F5;
+    --green: #959F06;
+    --gray: rgba(0, 0, 0, 0.55);
+    --title-color:#323232;
+    --text-color: #848484;
+    --light-gray: #E7E7E7;
+    --title-text: 'Roboto Condensed', sans-serif;
+    --body-text: 'Roboto', sans-serif;
+    --gradient: linear-gradient(180deg, rgba(248, 151, 96, 0.38) 0%, rgba(0, 0, 0, 0.69) 53.74%);
 }
+

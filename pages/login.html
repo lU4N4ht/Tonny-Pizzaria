@@ -10,39 +10,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/root.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/botao.css">
     <title>Tony's Pizzaria</title>
 </head>
 
 <body>
-    <header>
-        <img src="../img/logo.webp" alt="Logo Tony Pizzaria">
-    </header>
     <main>
+        <section class="first">
+        <img src="../img/logo.webp" alt="Logo Tony Pizzaria" height="100">
         <div class="content-container">
             <h1>Acesse a sua conta</h1>
             <p>O que você está esperando para saborear as mais deliciosas pizzas e sobremesas da região?</p>
         </div>
-        <div class="access">
-            <div class="input-info">
-                <img src="../img/email.png" alt="Email icon">
-                <input type="text" placeholder="Seu e-mail aqui">
+        </section>
+        <section class="second">
+            <div class="access">
+                <div class="input-info">
+                    <img src="../img/email.png" alt="Email icon">
+                    <input type="text" placeholder="Seu e-mail aqui">
+                </div>
+                <div class="input-info">
+                    <img src="../img/password.png" alt="Password icon">
+                    <input type="password" placeholder="Sua senha">
+                </div>
             </div>
-            <div class="input-info">
-                <img src="../img/password.png" alt="Password icon">
-                <input type="password" placeholder="Sua senha">
+            <div class="botao-login">
+                <a href="./home.html" class="botao">ENTRAR</a>
+                <p>Esqueci a senha</p>
             </div>
-        </div>
-        <div class="botao-login">
-            <a href="./home.html" class="botao">ENTRAR</a>
-            <p>Esqueci a senha</p>
-        </div>
+            <div class="criar-conta">
+                <p>Ainda não tem uma conta?</p>
+                <a href="./criar-conta.html">Criar conta</a>
+            </div>
+        </section>        
     </main>
-    <footer>
-        <p>Ainda não tem uma conta?</p>
-        <h3>Criar conta</h3>
-    </footer>
 </body>
 
 </html>

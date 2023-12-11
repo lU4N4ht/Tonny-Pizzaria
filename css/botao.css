@@ -1,12 +1,22 @@
 .botao{
+    font-family: var(--title-text);
     width: 300px;
     height: 55px;
-    border-radius: 8px;
-    color: var(--cor-principal);
+    border-radius: 0.5em;
+    color: var(--dark-red);
     font-size: 20px;
-    font-weight: 700;
-    background-color: #fff;
+    font-weight: 400;
+    background-color: var(--white);
     display: flex;
     justify-content: center;
+    gap: 20px;
     align-items: center;
+    border: 2px solid var(--dark-red);
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.botao:hover{
+    background-color: var(--dark-red);
+    color: var(--white);
+    transform: translateY(-0.125em);
 }

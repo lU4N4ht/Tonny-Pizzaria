@@ -1,0 +1,125 @@
+body {
+    background-image: url(../img/account-bg.png);
+    font-family: var(--body-text);
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+body::after {
+    position: absolute;
+    content: " ";
+    inset: 0;
+    background: var(--gradient);
+    z-index: -1;
+}
+
+header {
+    height: 210px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.prev-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: baseline;
+    gap: 20px;
+    align-items: center;
+}
+
+.criar-conta {
+    font-family: var(--title-text);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container-usuario-imagem {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.usuario-imagem {
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adicionar {
+    background-color: var(--light-red);
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    transition: .4s all ease;
+    top: 85px;
+    left: 50px;
+}
+
+.adicionar:hover {
+    transform: scale(.8);
+}
+
+main {
+    display: grid;
+    background-color: var(--bg-color);
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    padding-block: 20px;
+    padding-inline: 26px;
+    gap: 104px;
+}
+
+.informacoes-usuario {
+    display: grid;
+    justify-content: baseline;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    color: var(--title-color);
+    outline: 0;
+}
+
+.informacoes-usuario div {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 5px;
+}
+
+.informacoes-usuario div p {
+    font-family: var(--title-text);
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: var(--title-color);
+}
+.botao-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

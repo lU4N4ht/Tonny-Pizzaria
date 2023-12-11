@@ -1,16 +1,15 @@
 body {
-    background-color: var(--branco);
-    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/piza.png);
+    font-family: var(--body-text);
     display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 
 header {
-    background-image: url(../img/piza.png);
-    height: 260px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+   height: 260px;
     padding: 39px;
 }
 
@@ -22,7 +21,7 @@ header {
 
 main {
     display: grid;
-    background-color: var(--branco);
+    background-color: var(--bg-color);
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
     padding-block: 20px;
@@ -45,13 +44,13 @@ main {
 }
 
 .product-name {
-    color: var(--cinza);
+    color: var(--title-color);
     font-size: 24px;
     font-weight: 700;
 }
 
 .price {
-    color: #23CB98;
+    color: var(--green);
     font-size: 18px;
     font-weight: 700;
 }
@@ -68,7 +67,7 @@ main {
 }
 
 .description {
-    color: var(--cinza);
+    color: var(--text-color);
     width: 307px;
     font-size: 12px;
     font-weight: 400;
@@ -88,13 +87,13 @@ main {
 }
 
 .title {
-    color: var(--cinza);
+    color: var(--title-color);
     font-size: 15px;
     font-weight: 700;
 }
 
 .card {
-    background-color: #F5F5F5;
+    background-color: var(--light-gray);
     width: 294px;
     border-radius: 8px;
     display: grid;
@@ -129,12 +128,12 @@ main {
 .name {
     font-size: 12px;
     font-weight: 400;
-    color: var(--cinza);
+    color: var(--title-color);
 }
 .date{
     font-size: 10px;
     font-weight: 400;
-    color: var(--cinza);
+    color: var(--text-color);
 }
 .card-description{
     display: grid;
@@ -142,12 +141,12 @@ main {
 .card-title{
     font-size: 12px;
     font-weight: 700;
-    color: var(--cinza);
+    color: var(--title-color);
 }
 .card-description{
     font-size: 12px;
     font-weight: 400;
-    color: var(--cinza);
+    color: var(--text-color);
     line-height: 18px;
 }
 .card-container{

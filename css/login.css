@@ -1,0 +1,102 @@
+body {
+    background-image: url(../img/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 32px 24px;
+    font-family: var(--body-text);
+    display: grid;
+    height: 100vh;
+    gap: 20px;
+}
+
+body::after {
+    position: absolute;
+    content: " ";
+    inset: 0;
+    background: var(--gradient);
+    z-index: -1;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: end;
+    align-items: center;
+}
+.first{
+    display: grid;
+    gap: 50px;
+}
+.content-container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content-container h1 {
+    width: 230px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.content-container p {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.second{
+    display: grid;
+    gap: 20px;
+}
+.access{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    outline: 0;
+}
+.input-info{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+::placeholder{
+    color: #fff;
+}
+.botao-login{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.botao-login p{
+    display: flex;
+    justify-content: end;
+    color: #fff;
+    font-size: 16px;
+}
+.criar-conta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 13px;
+}
+.criar-conta p{
+    font-weight: 200;
+    font-size: 14px;
+}
+.criar-conta a{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.50);
+    text-decoration: none;
+    color: inherit;
+}
