@@ -17,23 +17,27 @@ body::after {
     background: var(--gradient);
     z-index: -1;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     gap: 50px;
     justify-content: end;
     align-items: center;
 }
-.first{
+
+.first {
     display: grid;
     gap: 50px;
 }
+
 .content-container {
     color: #fff;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .content-container h1 {
     width: 230px;
     font-size: 32px;
@@ -45,23 +49,27 @@ main{
     font-size: 16px;
     font-weight: 400;
 }
-.second{
+
+.second {
     display: grid;
     gap: 20px;
 }
-.access{
+
+.access {
     display: grid;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-input{
+
+input {
     background-color: transparent;
     border: none;
     color: #fff;
     outline: 0;
 }
-.input-info{
+
+.input-info {
     display: flex;
     justify-content: center;
     gap: 18px;
@@ -69,21 +77,25 @@ input{
     border-bottom: 1px solid #fff;
     padding-bottom: 5px;
 }
-::placeholder{
+
+::placeholder {
     color: #fff;
 }
-.botao-login{
+
+.botao-login {
     display: flex;
     flex-direction: column;
     gap: 13px;
 }
-.botao-login p{
+
+.botao-login p {
     display: flex;
     justify-content: end;
     color: #fff;
     font-size: 16px;
 }
-.criar-conta{
+
+.criar-conta {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,12 +103,64 @@ input{
     color: #fff;
     gap: 13px;
 }
-.criar-conta p{
+
+.criar-conta p {
     font-weight: 200;
     font-size: 14px;
 }
-.criar-conta a{
+
+.criar-conta a {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.50);
     text-decoration: none;
     color: inherit;
+}
+
+@media(min-width:1200px) {
+    body {
+        padding: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .first {
+        height: 100%;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    .content-container h1 {
+        width: 462px;
+        font-size: 64px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+    }
+
+    .content-container p {
+        width: 400px;
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .second {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        background-color: var(--red);
+        height: 100%;
+        width: 766px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botao-login p {
+        justify-content: center;
+    }
 }
