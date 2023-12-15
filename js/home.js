@@ -3,61 +3,30 @@
 const categorias = [
     {
         nome: 'pizza',
-        imagem : 'pizza.png'
+        imagem: 'pizza.png'
     },
     {
         nome: 'bebida',
-        imagem : 'bebida.png'
+        imagem: 'bebida.png'
     },
     {
         nome: 'calzone',
-        imagem : 'calzone.png'
+        imagem: 'calzone.png'
     },
     {
         nome: 'esfiha',
-        imagem : 'esfiha.png'
+        imagem: 'esfiha.png'
     },
     {
         nome: 'sorvete',
-        imagem : 'sorvete.png'
+        imagem: 'sorvete.png'
     },
     {
         nome: 'sobremesa',
-        imagem : 'sobremesa.png'
-    }    
-<<<<<<< HEAD
-]
-
-=======
-]
-
-const pizzaTemporaria = [
-    {
-        preco: 'R$ 19,00',
-        descricacao: 'Pizza de calabreza com queijo'
-    },
-    {
-        preco: 'R$ 19,00',
-        descricacao: 'Pizza de calabreza com queijo'
-    },
-    {
-        preco: 'R$ 19,00',
-        descricacao: 'Pizza de calabreza com queijo'
-    },
-    {
-        preco: 'R$ 19,00',
-        descricacao: 'Pizza de calabreza com queijo'
-    },
-    {
-        preco: 'R$ 19,00',
-        descricacao: 'Pizza de calabreza com queijo'
+        imagem: 'sobremesa.png'
     }
 ]
 
-
-
-
->>>>>>> 680c748b44d7e5fd4ad6b90e3999fea43b139373
 //Fazendo uma função para criar os cards de categoria via js
 function mostrarCategorias(categoria) {
     const container = document.getElementById('categories-container')
@@ -72,108 +41,43 @@ function mostrarCategorias(categoria) {
     container.appendChild(card)
 }
 
-<<<<<<< HEAD
 categorias.forEach(mostrarCategorias)
 
 //Criando uma função que puxe as informações do produto de um json e crie cards
-function mostrarProdutos(pizzateste) {
-    const secaoProdutos = document.getElementById('swiper-wrapper');
-    const cardContainer = document.createElement('div');
-    cardContainer.classList.add('swiper-slide');
-    const card = document.createElement('div');
-    card.classList.add('pizza');
-    const textoContainer = document.createElement('div');
-    textoContainer.classList.add('text-container');
-    const preco = document.createElement('h4');
-    preco.classList.add('price');
-    preco.textContent = pizzateste.preco;
-    const descricao = document.createElement('p');
-    descricao.classList.add('description');
-    descricao.textContent = pizzateste.descricao;  // Correção aqui
-  
-    textoContainer.appendChild(preco);
-    textoContainer.appendChild(descricao);
-    card.appendChild(textoContainer);
-    cardContainer.appendChild(card);
-    secaoProdutos.appendChild(cardContainer);
-  }
+async function mostrarPizzas() {
+        const url = 'https://tonny-pizzaria-back-dainxljnk-luana-magalhaes-projects.vercel.app/pizzaria/categoria/produto?categoria=pizza';
+        const response = await fetch(url);
+        const pizzas = await response.json();
 
-  const pizzaTemporaria = [
-    {
-      preco: 'R$ 19,00',
-      descricao: 'Pizza de calabreza com queijo'  // Correção aqui
-    },
-    {
-      preco: 'R$ 19,00',
-      descricao: 'Pizza de calabreza com queijo'
-    },
-    {
-      preco: 'R$ 19,00',
-      descricao: 'Pizza de calabreza com queijo'
-    },
-    {
-      preco: 'R$ 19,00',
-      descricao: 'Pizza de calabreza com queijo'
-    },
-    {
-      preco: 'R$ 19,00',
-      descricao: 'Pizza de calabreza com queijo'
-    },
-    {
-      preco: 'R$ 19,00',
-      descricao: 'Pizza de calabreza com queijo'
-    },
-    {
-      preco: 'R$ 19,00',
-      descricao: 'Pizza de calabreza com queijo'
-    },
-    {
-      preco: 'R$ 19,00',
-      descricao: 'Pizza de calabreza com queijo'
-    },
-    {
-      preco: 'R$ 19,00',
-      descricao: 'Pizza de calabreza com queijo'
-    },
-    {
-      preco: 'R$ 19,00',
-      descricao: 'Pizza de calabreza com queijo'
-    }
-  ];
-
-
-=======
-//Criando uma função que puxe as informações do produto de um json e crie cards
-function mostrarProdutos(pizzateste){
-    const secaoProdutos = document.getElementById('swiper-wrapper')
-    const cardContainer = document.createElement('div')
-    cardContainer.classList.add('swiper-slide')
-    const card = document.createElement('div')
-    card.classList.add('pizza')
-    const textoContainer = document.createElement('div')
-    textoContainer.classList.add('text-container')
-    const preco = document.createElement('h4')
-    preco.classList.add('price')
-    preco.textContent = pizzateste.preco
-    const descricao = document.createElement('p')
-    descricao.classList.add('description')  
-    descricao.textContent = pizzateste.descricacao
+    pizzas.produtos.forEach(function (pizza){
+        const secaoProdutos = document.getElementById('swiper-wrapper');
+        const cardContainer = document.createElement('div');
+        cardContainer.classList.add('swiper-slide');
+        const card = document.createElement('div');
+        card.classList.add('pizza');
+        // card.style.backgroundImage = `url(.${pizza.fotoProduto})`;
+        const textoContainer = document.createElement('div');
+        textoContainer.classList.add('text-container');
+        const preco = document.createElement('h4');
+        preco.classList.add('price');
+        preco.textContent = pizza.precoUnitario;
+        const descricao = document.createElement('p');
+        descricao.classList.add('description');
+        descricao.textContent = pizza.nome;
     
-    textoContainer.appendChild(preco)
-    textoContainer.appendChild(descricao)
-    card.appendChild(textoContainer)
-    cardContainer.appendChild(card)
-    secaoProdutos.appendChild(cardContainer)
+        textoContainer.appendChild(preco);
+        textoContainer.appendChild(descricao);
+        card.appendChild(textoContainer);
+        cardContainer.appendChild(card);
+        secaoProdutos.appendChild(cardContainer);
+
+    })
+
+
 }
 
-//Criando uma função que puxe as informações das bebidas de um json e crie cards
-  
+document.addEventListener('DOMContentLoaded', mostrarPizzas);
 
-
-categorias.forEach(mostrarCategorias)
-
->>>>>>> 680c748b44d7e5fd4ad6b90e3999fea43b139373
-pizzaTemporaria.forEach(mostrarProdutos)
 
 //Criando uma função auxiliar do "Swiper.js" que ajuda na criação de sliderss
 var swiper = new Swiper(".mySwiper", {
@@ -181,10 +85,8 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     breakpoints: {
         768: {
-          slidesPerView: 6,
-          spaceBetween: 10,
+            slidesPerView: 6,
+            spaceBetween: 10,
         },
-      }
-  });
-
-
+    }
+});

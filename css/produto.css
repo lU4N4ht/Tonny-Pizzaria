@@ -1,23 +1,16 @@
 body {
     background-image: url(../img/piza.png);
-<<<<<<< HEAD
     font-family: var(--body-text);
-=======
     font-family: 'Roboto', sans-serif;
->>>>>>> 680c748b44d7e5fd4ad6b90e3999fea43b139373
     display: grid;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
 
-
 header {
-<<<<<<< HEAD
    height: 260px;
-=======
     height: 260px;
->>>>>>> 680c748b44d7e5fd4ad6b90e3999fea43b139373
     padding: 39px;
 }
 
@@ -162,6 +155,12 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 12px;
+}
+
+@media(min-width: 667px){
+    .card{
+        display: flex;
+    }
 }
 
 /* footer{
